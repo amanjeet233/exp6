@@ -1,17 +1,16 @@
-# mongodb
-## EXPERIMENT 01
-# CRUD Operations for Product Database Using Mongoose
+# 🛠️ Full Stack Integration: React + Express + Axios
 
+This project demonstrates how to connect a **React frontend** with an **Express.js backend** using **Axios** to fetch and display product data.
 
+---
 
-## EXPERIMENT 02
-# Student Management System Using MongoDB and MVC Architecture
+## 📌 Objective
 
+- Build a **REST API** using Express that serves a list of products.
+- Connect a **React frontend** to that API using Axios.
+- Display the fetched data with proper **loading** and **error handling**.
 
-## EXPERIMENT 03
-# E-commerce Catalog with Nested Document Structure in MongoDB
+---
 
-
-## OBJECTIVE
-Learn how to design and implement a MongoDB data model using nested documents to represent a real-world e-commerce catalog. This task strengthens your understanding of MongoDB’s flexible document structure, schema design, and handling complex relationships inside a single collection.
+## 🧩 Project Structure
 
