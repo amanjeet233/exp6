@@ -1,21 +1,23 @@
-const mongoose = require('mongoose');
+ // backend/index.js
+const express = require('express');
+const cors = require('cors');
 
-const productSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-    trim: true,          // removes extra spaces
-  },
-  price: {
-    type: Number,
-    required: true,
-    min: 0,              // price cannot be negative
-  },
-  category: {
-    type: String,
-    required: true,
-    trim: true,
-  }
+const app = express();
+const PORT = 5000;
+
+app.use(cors());
+
+const products = [
+  { name: 'Laptop', price: 999.99 },
+  { name: 'Mouse', price: 19.99 },
+  { name: 'Keyboard', price: 49.99 },
+  { name: 'Monitor', price: 199.99 }
+];
+
+app.get('/api/products', (req, res) => {
+  res.json(products);
 });
 
-module.exports = mongoose.model('Product', productSchema);
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
